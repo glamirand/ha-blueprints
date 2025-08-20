@@ -1,5 +1,5 @@
 blueprint:
-  name: "TEST DEV GLAMIRAND - Cover Control Automation (CCA)"
+  name: "TEST GLAMIRAND - Cover Control Automation (CCA)"
   description: |
     # ⭐ Cover Control Automation (CCA) ⭐
     ### A comprehensive and highly configurable blueprint for roller shutters and roller blinds
@@ -334,8 +334,12 @@ blueprint:
     </details>
 
   #source_url: https://github.com/hvorragend/ha-blueprints/blob/main/blueprints/automation/cover_control_automation.yaml
+<<<<<<< HEAD
   #source_url: https://github.com/glamirand/ha-blueprints/blob/main/blueprints/automation/cover_control_automation.yaml
   source_url: https://github.com/glamirand/ha-blueprints/blob/dev/blueprints/automation/cover_control_automation.yaml
+=======
+  source_url: https://github.com/glamirand/ha-blueprints/blob/main/blueprints/automation/cover_control_automation.yaml
+>>>>>>> 49576d6 (Uptage name & link)
   domain: automation
   homeassistant:
     min_version: "2024.10.0"
