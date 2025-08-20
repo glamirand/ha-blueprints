@@ -334,12 +334,8 @@ blueprint:
     </details>
 
   #source_url: https://github.com/hvorragend/ha-blueprints/blob/main/blueprints/automation/cover_control_automation.yaml
-<<<<<<< HEAD
-  #source_url: https://github.com/glamirand/ha-blueprints/blob/main/blueprints/automation/cover_control_automation.yaml
-  source_url: https://github.com/glamirand/ha-blueprints/blob/dev/blueprints/automation/cover_control_automation.yaml
-=======
   source_url: https://github.com/glamirand/ha-blueprints/blob/main/blueprints/automation/cover_control_automation.yaml
->>>>>>> 49576d6 (Uptage name & link)
+  #source_url: https://github.com/glamirand/ha-blueprints/blob/dev/blueprints/automation/cover_control_automation.yaml
   domain: automation
   homeassistant:
     min_version: "2024.10.0"
