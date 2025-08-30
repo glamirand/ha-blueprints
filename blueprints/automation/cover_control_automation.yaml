@@ -2837,6 +2837,8 @@ actions:
 
   # YAML Anchors ###############################################################
   - variables:
+      target_position: 0
+      target_tilt_position: 0
       cover_move_action: &cover_move_action
         sequence:
           - if:
