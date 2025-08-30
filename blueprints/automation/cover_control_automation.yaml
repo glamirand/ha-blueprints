@@ -2878,7 +2878,7 @@ actions:
                                 entity_id: "{{ repeat.item if repeat is defined else '' }}"
                             - delay:
                                 seconds: "{{ (range(1, 3) | random | int) }}"
-              - wait_template: "{{state_attr(blind, 'current_position') == target_position}}"
+              - wait_template: "{{((state_attr(blind, 'current_position') - target_position) | abs) <= position_tolerance}}"
                 continue_on_timeout: true
                 timeout: !input drive_time
 
@@ -2906,7 +2906,7 @@ actions:
                             entity_id: "{{ repeat.item if repeat is defined else '' }}"
                         - delay:
                             seconds: "{{ (range(1, 3) | random | int) }}" 
-                  - wait_template: "{{state_attr(blind, 'current_tilt_position') == 0}}"
+                  - wait_template: "{{state_attr(blind, 'current_tilt_position') <= position_tolerance}}"
                     continue_on_timeout: true
                     timeout: !input drive_time
               - alias: "Tilt Delay"
